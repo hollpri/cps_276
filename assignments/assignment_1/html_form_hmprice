@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Project</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<form method="post" action="#">
+<div class="container">
+    <!-- First line w/ first and last name-->
+    <div class="row">
+        <div class="col-md-6">
+                <label for="first name">First Name</label>
+                <textarea id="first name" name="first name" rows="1" cols="6" class="form-control" placeholder=" "></textarea>
+                <br>
+        </div>
+        <div class="col-md-6">
+                <label for="first name">Last Name</label>
+                <textarea id="last name" name="last name" rows="1" cols="6" class="form-control" placeholder=" "></textarea>
+                <br>           
+        </div>
+    </div>
+
+    <!-- Second line w/ address-->
+     <div class="row">
+        <div class="col-md-12">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="1" cols="12" class="form-control" placeholder=" "></textarea>
+                <br>
+        </div>
+    </div>
+
+    <!-- Third line w/ city, state, and zip-->
+    <div class="row">
+        <div class="col-6">
+                <label for="city">City</label>
+                <textarea id="city" name="city" rows="1" cols="6" class="form-control" placeholder=" "></textarea>
+                <br>          
+        </div>
+        <div class="col-4">
+                <label for="state">State</label>
+                <select id="state" name="state" class="form-control">
+                    <option value="illinois">Illinois</option>
+                    <option value="california">California</option>
+                    <option value="michigan" selected>Michigan</option>
+                    <option value="minnesota">Minnesota</option>
+                    <option value="ohio">Ohio</option>
+                </select>
+        </div>
+        <div class="col-2">
+                <label for="zip">Zip</label>
+                <textarea id="zip" name="zip" rows="1" cols="4" class="form-control" placeholder=" "></textarea>
+                <br>           
+        </div>
+    </div>
+
+    <!-- Fourth line w/ phone and email -->
+    <div class="row">
+        <div class="col-md-6">
+                <label for="phone">Phone</label>
+                <textarea id="phone" name="phone" rows="1" cols="6" class="form-control" placeholder=" "></textarea>
+                <br>
+        </div>
+        <div class="col-md-6">
+                <label for="email">Email</label>
+                <textarea id="email" name="email" rows="1" cols="6" class="form-control" placeholder=" "></textarea>
+                <br>
+        </div>
+    </div>
+
+     <!-- Radio stuff -->
+    <p> Preferred method of contact</p>
+        <input type="radio" id="email" name="contact_method" value="email">        
+        <label for="email">Email</label>
+        <input type="radio" id="text" name="contact_method" value="text">        
+        <label for="text">Text</label>
+        <br>
+        <input type="submit" value="Sign In" class="btn btn-primary">
+    </form>
+</div>
+
