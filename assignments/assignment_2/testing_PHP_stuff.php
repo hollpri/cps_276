@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>USA</td>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>30</td>
+        <td>Spain</td>
+    </tr>
+</table>
