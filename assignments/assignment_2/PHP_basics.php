@@ -1,4 +1,6 @@
 <?php
+/*the even number loop*/
+
     $allNumbers = range(1,50);
     $evenNumbers = 'Even numbers: ';
     foreach ($allNumbers as $number)
@@ -15,26 +17,30 @@
 ?>
 
 <?php
+/*the form with email and textarea*/
+
     $form = <<<EOD
         <form>
-        <label for="email">Email Address:</label>
-        <input type="text" id="email" name="email" class="form-control" placeholder="name@example.com">
-        <br>
-        <label for="message">Example textarea:</label>
-        <textarea id="message" name="message" rows="4" cols="50" class="form-control" placeholder=""></textarea>
-        <br>
-    </form>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" class="form-control" placeholder="name@example.com">
+            <br>
+            <label for="message">Example textarea:</label>
+            <textarea id="message" name="message" rows="4" cols="50" class="form-control" placeholder=""></textarea>
+            <br>
+        </form>
     EOD;
 ?>
 
 <?php
+/*the table that lists what row and column it is*/
+
     function createTable($rows, $columns)
     {
         $table = '<table class="table table-bordered">';
-            for ($i = 1; $i <= $rows; $i++)
+            for ($i = 1; $i <= $rows; $i++) //this is giving each row
             {
                 $table = $table . '<tr>';
-                for ($j = 1; $j <= $columns; $j++)
+                for ($j = 1; $j <= $columns; $j++) //this is giving each column
                 {
                     $table = $table . '<td>Row ' . $i . ', Col ' . $j . '</td>';
                 }
