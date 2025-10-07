@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <label for="names">Enter Name</label>
                     <input type="text" id="name" name="name" class="form-control" placeholder="">
                     </label>
-                    
+                    <br>
 
                 <label for="output">List of Names</label>
                 <textarea style="height: 500px;" class="form-control"
