@@ -6,13 +6,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 {
     require_once 'classes/Directories.php'; 
 
-    if ($_SERVER["REQUEST_METHOD"] === "POST") 
-    {
-        $directoryName = $_POST['folder_name'];
-        $fileInsides = $_POST['file_content'];
+    $directoryName = $_POST['folder_name'];
+    $fileInsides = $_POST['file_content'];
 
-        $myDirectory = new Directories();
-        $return = $myDirectory->directo($directoryName, $fileInsides);
+    $myDirectory = new Directories();
+    $return = $myDirectory->directo($directoryName, $fileInsides);
     }
 }
 
