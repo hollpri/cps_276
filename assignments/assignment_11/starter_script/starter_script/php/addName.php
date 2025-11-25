@@ -25,10 +25,12 @@ try
     $pdo = new PdoMethods();
     $result = $pdo->otherNotBinded($sql);
 
+    header('Content-Type: application/json');
     echo json_encode(['masterstatus' => 'success', 'msg' => "Added: $full_Name_Complete"]);
 }
 catch (Exception $e)
 {
+    header('Content-Type: application/json');
     echo json_encode(['masterstatus' => 'error', 'msg' => "Error, failed to add: $full_Name_Complete" . $e->getMessage()]);
 }
 
